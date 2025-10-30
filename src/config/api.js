@@ -1,8 +1,9 @@
 // API Configuration
+import axios from 'axios';
+
 export const API_BASE = process.env.REACT_APP_API_URL || 'https://shopify-blog-backend.vercel.app';
 
 // Axios instance với CORS headers nếu cần
-import axios from 'axios';
 
 const apiClient = axios.create({
   baseURL: API_BASE,
