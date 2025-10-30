@@ -7,9 +7,8 @@ import ProductReviewEditor from '../components/article-editor/ProductReviewEdito
 import ArticlePreview from '../components/article-editor/ArticlePreview';
 import { useBlockManager } from '../hooks/useBlockManager';
 import { generateArticleHTML } from '../utils/articleHTMLGenerator';
+import { API_BASE } from '../config/api';
 import './ArticleEditor.css';
-
-const API_BASE =  'https://shopify-blog-backend.vercel.app';
 
 export default function ArticleEditor() {
   const [blogs, setBlogs] = useState([]);

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import BlogSelector from '../components/BlogSelector';
-
-const API_BASE = process.env.REACT_APP_API_URL || 'https://backend-xi-puce-34.vercel.app';
+import { API_BASE } from '../config/api';
 
 export default function BlogManagement() {
   const [blogs, setBlogs] = useState([]);
